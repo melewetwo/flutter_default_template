@@ -1,12 +1,18 @@
-# defaulttemplate
+## defaulttemplate
 
-to use this template:
+#to use this template:
 
-enable or update:
+1. enable or update:
+```
 flutter pub global activate --source git https://github.com/melewetwo/flutter_create.git
+```
 
-run:
+2. run
+```
 flutter pub global run flutter_create -a my_awesome_app -u https://github.com/melewetwo/flutter_default_template.git
+```
 
-afterwards run:
+3. afterwards run:
+
+```
 flutter create .
