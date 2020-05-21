@@ -1,6 +1,8 @@
-## defaulttemplate
+## default_template_flutter
 
-# to use this template:
+a template for flutter applications.
+
+# use this template:
 
 enable or update:
 ```
