@@ -6,7 +6,7 @@ import 'package:defaulttemplate/pages/landing/landing_page.dart';
 import '../pages/loading/loading_page.dart';
 
 // rerun generation:
-// flutter packages pub run build_runner build
+// flutter packages pub run build_runner build --delete-conflicting-outputs
 
 // docs: https://pub.dev/packages/auto_route#-readme-tab-
 
