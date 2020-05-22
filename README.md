@@ -11,7 +11,7 @@ flutter pub global activate --source git https://github.com/melewetwo/flutter_cr
 
 run
 ```
-flutter pub global run flutter_create -a my_awesome_app -u https://github.com/melewetwo/flutter_default_template.git
+flutter pub global run flutter_create -u https://github.com/melewetwo/flutter_default_template.git -a my_awesome_app 
 ```
 
 run inside project folder
