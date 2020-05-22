@@ -1,3 +1,8 @@
+# after created run:
+#flutter create .
+#flutter pub get
+#flutter packages pub run build_runner build --delete-conflicting-outputs
+
 name: defaulttemplate
 description: A starting point for flutter applications
 
