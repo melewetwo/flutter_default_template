@@ -1,6 +1,4 @@
 import 'package:my_awesome_app/pages/landing/landing_model.dart';
-import 'package:my_awesome_app/services/gloabl_error_handling/error_message.dart';
-import 'package:my_awesome_app/services/gloabl_error_handling/global_error_service.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
@@ -23,9 +21,21 @@ class _LandingPageState extends State<LandingPage> {
               title: Text('Title'),
             ),
             body: Container(child: Center(
-              child: RaisedButton(
-                child: Text('showError'),
-                onPressed: model.showError
+              child: Column(
+                children: [
+                  RaisedButton(
+                    child: Text('showError'),
+                    onPressed: model.showError
+                  ),
+                  RaisedButton(
+                      child: Text('showSnackbar'),
+                      onPressed: model.showSnackbar
+                  ),
+                  RaisedButton(
+                      child: Text('showDialog'),
+                      onPressed: model.showError
+                  )
+                ],
               ),
             ),),
           )

@@ -2,10 +2,10 @@
 
 import 'package:auto_route/auto_route_annotations.dart';
 import 'package:my_awesome_app/pages/landing/landing_page.dart';
-
 import '../pages/loading/loading_page.dart';
 
 // rerun generation:
+// flutter packages pub run build_runner build
 // flutter packages pub run build_runner build --delete-conflicting-outputs
 
 // docs: https://pub.dev/packages/auto_route#-readme-tab-
@@ -25,7 +25,6 @@ class $Router{
   LoadingPage loadingScreen;
 
   LandingPage landingPage;
-
 
   //@CustomRoute(fullscreenDialog: true)
   //@GuardedBy([AuthGuard])

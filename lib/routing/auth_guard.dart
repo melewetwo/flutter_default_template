@@ -11,6 +11,7 @@ class AuthGuard extends RouteGuard{
 
   @override
   Future<bool> canNavigate(ExtendedNavigatorState<RouterBase> navigator, String routeName, Object arguments) {
+
     if (isLoggedIn) {
       return Future<bool>.value(true);
     }
