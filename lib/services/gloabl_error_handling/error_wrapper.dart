@@ -42,19 +42,24 @@ class _ErrorWrapperState extends State<ErrorWrapper> with SingleTickerProviderSt
                             position: Tween<Offset>(begin: Offset(0.0, -1.0), end: Offset(0.0, 0.0)).animate(animation));
                       },
                       child: errorMessage == null ? SizedBox() :
-                        Dismissible(
-                            onDismissed: (direction) {
-                              GetIt.instance<GlobalErrorService>().errorDismissed();
-                            },
-                            key: UniqueKey(),
-                            child: Card(
-                              elevation: 3.0,
-                              child: ListTile(
-                                leading: Icon(Icons.error_outline, color: Colors.red,size: 40,),
-                                title: Text(errorMessage.title),
-                                subtitle: Text(errorMessage.message),
-                              ),
-                            )
+                        Container(
+                          constraints: BoxConstraints(
+                            maxWidth: 600
+                          ),
+                          child: Dismissible(
+                              onDismissed: (direction) {
+                                GetIt.instance<GlobalErrorService>().errorDismissed();
+                              },
+                              key: UniqueKey(),
+                              child: Card(
+                                elevation: 3.0,
+                                child: ListTile(
+                                  leading: Icon(Icons.error_outline, color: Colors.red,size: 40,),
+                                  title: Text(errorMessage.title),
+                                  subtitle: Text(errorMessage.message),
+                                ),
+                              )
+                          ),
                         )
                       );
                   }

@@ -8,8 +8,7 @@ class SomeService{  // just a sample
   BehaviorSubject<bool> _initialized = BehaviorSubject<bool>();
   Stream<bool> get initialized => _initialized.stream;
 
-  @factoryMethod
-  Future<SomeService> create(){
+  SomeService(){
     _initialized.sink.add(false);
     init();
   }

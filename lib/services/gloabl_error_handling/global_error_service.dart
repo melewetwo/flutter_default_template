@@ -14,7 +14,7 @@ class GlobalErrorService{
     _error.sink.add(null);
   }
 
-  void showErrorDialog(ErrorMessage errorMessage, {Duration duration=const Duration(seconds: 2)}){
+  void showErrorDialog(ErrorMessage errorMessage, {Duration duration=const Duration(seconds: 4)}){
     _error.sink.add(errorMessage);
     Future.delayed(duration).then((value) {
       if(_error.stream.value == errorMessage){
