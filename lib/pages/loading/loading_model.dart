@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:auto_route/auto_route.dart';
-import 'package:defaulttemplate/routing/router.gr.dart';
-import 'package:defaulttemplate/services/some_service.dart';
+import 'package:my_awesome_app/routing/router.gr.dart';
+import 'package:my_awesome_app/services/some_service/some_service.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get_it/get_it.dart';
 

@@ -39,16 +39,20 @@ packages:
   auto_route:
     dependency: "direct main"
     description:
-      name: auto_route
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: auto_route
+      ref: "issue#113"
+      resolved-ref: "1b861c5917419a7670020d1c45f6f9fba4e1ae64"
+      url: "https://github.com/melewetwo/auto_route_library.git"
+    source: git
     version: "0.5.0"
   auto_route_generator:
     dependency: "direct dev"
     description:
-      name: auto_route_generator
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: auto_route_generator
+      ref: "issue#113"
+      resolved-ref: "1b861c5917419a7670020d1c45f6f9fba4e1ae64"
+      url: "https://github.com/melewetwo/auto_route_library.git"
+    source: git
     version: "0.5.0"
   boolean_selector:
     dependency: transitive
@@ -275,6 +279,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.12"
+  injectable:
+    dependency: "direct main"
+    description:
+      name: injectable
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.4.0"
+  injectable_generator:
+    dependency: "direct dev"
+    description:
+      name: injectable_generator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.4.0"
   io:
     dependency: transitive
     description:

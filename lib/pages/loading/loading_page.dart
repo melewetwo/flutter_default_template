@@ -1,4 +1,4 @@
-import 'package:defaulttemplate/pages/loading/loading_model.dart';
+import 'package:my_awesome_app/pages/loading/loading_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

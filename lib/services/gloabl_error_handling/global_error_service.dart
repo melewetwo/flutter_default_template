@@ -1,8 +1,10 @@
 
 
-import 'package:defaulttemplate/services/gloabl_error_handling/error_message.dart';
+import 'package:injectable/injectable.dart';
+import 'package:my_awesome_app/services/gloabl_error_handling/error_message.dart';
 import 'package:rxdart/rxdart.dart';
 
+@singleton
 class GlobalErrorService{
 
   BehaviorSubject<ErrorMessage> _error = BehaviorSubject<ErrorMessage>();

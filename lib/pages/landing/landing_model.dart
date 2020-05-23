@@ -1,5 +1,5 @@
-import 'package:defaulttemplate/services/gloabl_error_handling/error_message.dart';
-import 'package:defaulttemplate/services/gloabl_error_handling/global_error_service.dart';
+import 'package:my_awesome_app/services/gloabl_error_handling/error_message.dart';
+import 'package:my_awesome_app/services/gloabl_error_handling/global_error_service.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get_it/get_it.dart';
 

@@ -1,12 +1,15 @@
 
+import 'package:injectable/injectable.dart';
 import 'package:rxdart/rxdart.dart';
 
+@singleton
 class SomeService{  // just a sample
 
   BehaviorSubject<bool> _initialized = BehaviorSubject<bool>();
   Stream<bool> get initialized => _initialized.stream;
 
-  SomeService(){
+  @factoryMethod
+  Future<SomeService> create(){
     _initialized.sink.add(false);
     init();
   }

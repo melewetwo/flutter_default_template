@@ -1,9 +1,9 @@
 # after created run:
-#flutter create .
-#flutter pub get
-#flutter packages pub run build_runner build --delete-conflicting-outputs
+# flutter create .
+# flutter pub get
+# flutter packages pub run build_runner build --delete-conflicting-outputs
 
-name: defaulttemplate
+name: my_awesome_app
 description: A starting point for flutter applications
 
 # The following line prevents the package from being accidentally published to
@@ -34,6 +34,7 @@ dependencies:
 
   # Servicelocator
   get_it: ^4.0.2
+  injectable: ^0.4.0
 
   # Streaming
   rxdart: ^0.24.1
@@ -50,16 +51,29 @@ dependencies:
   url_launcher_web: ^0.1.1+5
 
   # auto routing using annotations
-  auto_route: ^0.5.0
+  auto_route: #^0.5.0
+    git:
+      url: https://github.com/melewetwo/auto_route_library.git
+      ref: issue#113
+      path: auto_route
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  # often needed for dependencies
   build_runner: ^1.10.0
-  #needed for launcher icon generation
   flutter_launcher_icons: ^0.7.5
-  auto_route_generator: ^0.5.0
+  injectable_generator:
+  auto_route_generator: #0.5.0
+    git:
+     url: https://github.com/melewetwo/auto_route_library.git
+     ref: issue#113
+     path: auto_route_generator
+
+  # flutter packages pub run build_runner build
+  # flutter packages pub run build_runner watch
+
+
+
 
 flutter:
   uses-material-design: true
